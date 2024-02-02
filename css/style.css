@@ -34,7 +34,7 @@
     display: flex;
     line-height: 34px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0 376px 0 0;
+    padding: 0 368px 0 0;
     font-size: 14px;
 }
 
@@ -300,6 +300,10 @@
         font-size: 0;
     }
 
+    /* .main_visual .main_slide .slick-dots>li.slick-active>button {
+        background: #ddd;
+    } */
+
     .main_visual .lnk {
         display: flex;
         gap: 10px;
@@ -374,12 +378,16 @@
 }
 
 @media (max-width:768px) {
+    .focus {
+        overflow: hidden;
+    }
+
     .focus .tit h2 {
         text-align: center;
     }
 
     .focus .tit h2::after {
-        bottom: -10px;
+        bottom: -25px;
     }
 
     .focus .img_box {
@@ -403,6 +411,7 @@
 .m_News {
     padding: 100px 0;
     background: url(../images/mNews2_bg.jpg)no-repeat center center/cover;
+    overflow: hidden;
 }
 
 .m_News .tit h2 {
@@ -493,12 +502,12 @@
 
 .left_tab .arrows .left {
     position: absolute;
-    left: 0;
+    left: 15px;
 }
 
 .left_tab .arrows .right {
     position: absolute;
-    right: 0;
+    right: 15px;
 }
 
 .m_News .news_box .sub_slide figure img {
@@ -572,6 +581,7 @@
     .m_News {
         padding: 100px 0;
         background: url(../images/mNews2_bg.jpg)no-repeat center center/cover;
+        overflow: hidden;
     }
 
     .m_News .tit h2 {
@@ -583,7 +593,7 @@
     .m_News .tit h2::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -25px;
         left: 60%;
         transform: translate(-50%, -50%);
         width: 940px;
@@ -717,6 +727,7 @@
 .infomation {
     padding: 80px 0;
     background: url(../images/mcon4_bg1.jpg)no-repeat center center/cover;
+    overflow: hidden;
 }
 
 .infomation .tit h2 {
@@ -860,7 +871,7 @@
     }
 
     .infomation .tit h2::after {
-        bottom: -10px;
+        bottom: -25px;
     }
 
     .infomation .img_box {
@@ -1167,10 +1178,14 @@
     .footer .m_box {
         display: flex;
         gap: 80px;
-        padding: 60px 0;
+        padding: 30px 15px;
+
+        flex-direction: column;
     }
 
-    .footer .m_box ul {}
+    .footer .m_box .m_adress {
+        word-break: keep-all;
+    }
 
     .footer .m_box ul li {
         margin: 0 0 8px 0;
