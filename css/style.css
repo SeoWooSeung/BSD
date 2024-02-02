@@ -1204,3 +1204,57 @@
         margin: 0 8px 0 0;
     }
 }
+
+/* ***********************subpage*********************************/
+
+.Employment {
+    background: url(../images/bg_introWrap.jpg)no-repeat center center/cover;
+    height: 100vh;
+    margin: 0 0 80px 0;
+}
+
+.Employment .logo {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.Employment .logo img {
+    margin: 0 0 100px 0;
+}
+
+.Employment .content .img_box {
+    display: flex;
+    gap: 20px;
+}
+
+.Employment .content .img_box>* {
+    flex: 1;
+}
+
+@media (max-width:768px) {
+    .Employment {
+        background: url(../images/bg_introWrap.jpg)no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .Employment .logo {
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .Employment .logo img {
+        margin: 0 0 100px 0;
+    }
+
+    .Employment .content .img_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .Employment .content .img_box img {
+        text-align: center;
+    }
+}
+
+/* **************university******************** */
